@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import './App.css'
+import Navbar from './components/Navbar'
 import { CryptoProvider } from './contexts/CryptoContext'
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
     <CryptoProvider>
       <Router>
         <div className='min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900'>
+          <Navbar />
           <main className='pt-20'></main>
         </div>
       </Router>
