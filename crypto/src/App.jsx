@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Dashboard from './components/Dashboard'
 import Portfolio from './components/Portfolio'
 import Markets from './components/Markets'
+import News from './components/News'
 import { CryptoProvider } from './contexts/CryptoContext'
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
               <Route path='/' element={<Dashboard />} />
               <Route path='/portfolio' element={<Portfolio />} />
               <Route path='/markets' element={<Markets />} />
+              <Route path='/news' element={<News />} />
             </Routes>
           </main>
         </div>
