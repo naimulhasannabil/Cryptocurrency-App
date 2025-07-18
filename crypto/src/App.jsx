@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import Dashboard from './components/Dashboard'
+import Markets from './components/Markets'
 import { CryptoProvider } from './contexts/CryptoContext'
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
           <main className='pt-20'>
             <Routes>
               <Route path='/' element={<Dashboard />} />
+              <Route path='/markets' element={<Markets />} />
             </Routes>
           </main>
         </div>
